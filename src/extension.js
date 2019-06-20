@@ -15,6 +15,7 @@ function activate(context) {
 	console.log('Congratulations, your extension "wj-plugin" is now active!');
 
 	require('./helloVX')(context); // helloworld
+	require('./welcome')(context); // 欢迎页面
 	require('./file-tool')(context); // 测试命令参数
 
 	// The command has been defined in the package.json file

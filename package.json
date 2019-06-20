@@ -10,12 +10,26 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloVX",
-		"onCommand:wjWeb.start",
-		"onCommand:extension.vx.getCurrentFilePath"
+		"*"
 	],
 	"main": "./src/extension.js",
 	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "wj-code-plugin",
+			"properties": {
+				"wjCodeParams.yourName": {
+					"type": "string",
+					"default": "Wang Jian",
+					"description": "名字"
+				},
+				"wjCodeParams.showTip": {
+					"type": "boolean",
+					"default": true,
+					"description": "启动时显示自定义欢迎页"
+				}
+			}
+		},
 		"commands": [
 			{
 				"command": "extension.helloVX",
@@ -29,6 +43,10 @@
 			{
 				"command": "extension.vx.getCurrentFilePath",
 				"title": "获取当前文件(夹)路径"
+			},
+			{
+				"command": "extension.vx.showWelcome",
+				"title": "显示自定义欢迎页"
 			}
 		],
 		"keybindings": [

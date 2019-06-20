@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)#code -->
+<html lang="zh-CN">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- Meta, title, CSS, favicons, etc. -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="vx">
+		<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+		<meta name="author" content="wangjian">
+
+		<title> VE平台欢迎文档 </title>
+
+		<!-- Bootstrap core CSS -->
+
+		<style class="anchorjs"></style>
+		<link href="./resource/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Optional Bootstrap Theme -->
+
+		<link href="data:text/css;charset=utf-8," data-href="./resource/bootstrap-theme.min.css" rel="stylesheet" id="bs-theme-stylesheet">
+
+		<!-- Documentation extras -->
+
+		<link href="./resource/docs.min.css" rel="stylesheet">
+
+		<link href="./resource/patch.css" rel="stylesheet">
+		<!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+		<script src="./resource/ie-emulation-modes-warning.js"></script>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- Favicons -->
+		<link rel="icon" href="./img/logo-head.png">
+
+		<script>
+			var _hmt = _hmt || [];
+		</script>
+	</head>
+
+	<body>
+		<!-- 大标题 -->
+		<div class="bs-docs-header" id="content" tabindex="-1">
+			<div class="container">
+				<h1>VE平台</h1>
+				<p>
+					VE，中文名微昳，是一款轻巧、简单、优雅的VX前端集成开发平台！帮您定制您的前端VX项目。
+				</p>
+			</div>
+		</div>
+
+		<!--主体 start-->
+		<div class="container bs-docs-container">
+			<div class="row">
+
+				<!--主体左侧内容	start-->
+				<div class="col-md-9" role="main">
+
+					<!--概览	start-->
+					<div class="bs-docs-section">
+						<h1 id="overview" class="page-header">邂逅</h1>
+						<div class="row">
+							<div class="col-md-3">
+								<img class="img-responsive center-block" src="img/velogo.png" type="image/png" style="height: auto;">
+							</div>
+							<div class="col-md-9">
+								<p class="lead">
+									VE平台（中文名：微昳平台） 是科蓝公司VX团队，基于 Atom专门为前端工程师推出的一款跨平台文本编辑器。具有简洁和直观的图形用户界面，并有很多有趣的特点：支持PE-VX，CSS，HTML，JavaScript等网页编程语言。它支持宏，自动完成分屏功能，集成了文件管理器。
+								</p>
+							</div>
+						</div>
+						<!--为何使用Atom-->
+						<h2 id="overview-reason">为何要使用VE平台</h2>
+						<p>
+							基于Web开发的VE平台编辑器具有很多优点：
+						</p>
+
+						<ol>
+							<li>
+								<strong>绿色开源</strong> — 软件包绿色免安装，支持开源
+							</li>
+							<li>
+								<strong>多平台</strong> — 支持MAC/WIN/LINUX(支持源码编译安装,也提供二进制安装包)
+							</li>
+							<li>
+								<strong>类Sublime</strong> — 风格和sublime text极其相似,不管是风格还是操作上,快捷键上一些是通用的,应该借鉴
+							</li>
+							<li>
+								<strong>采用包管理技术</strong> — 采用了node.js来访问文件系统和包管理。
+							</li>
+							<li>
+								<strong>VX页面自动生成</strong> — 自动生成VX交易功能页面及路由，所见即所得的智能拖拽布局，释放前端工程师的创作潜能!
+							</li>
+							<li>
+								<strong>VX代码补全</strong> — 对VX指令、过滤器、服务、以及VX对象方法进行提示补全，降低VX的学习门槛!
+							</li>
+							<li>
+								<strong>前后端分离开发</strong> — 集成了nginx服务器智能配置，无缝支持VX前后端分离开发!
+							</li>
+						</ol>
+
+						<!--下载安装-->
+						<h2 id="overview-download">下载安装</h2>
+						<p>
+							VE平台绿色版下载：可进入下载页面 <a onclick="openWindow('https://atom.io/')" href="javascript:void(0)">http://115.182.90.204:8082/vxDesign/index.html#/app/ClassicalDesk</a>进行下载。直接点击<code>下载</code>
+							按钮进行下载。直接解压文件即可。 <img class="img-responsive center-block" src="img/download1.png" type="image/png" style="height: auto;">
+						</p>
+
+						<p>
+							解压完成，目录下生成两个文件：
+							<ul>
+								<li>
+									<strong>Atom</strong> — 编辑器的执行文件
+								</li>
+								<li>
+									<strong>.atom</strong> — 编辑器的配置文件，包括各种插件等
+								</li>
+							</ul>
+						</p>
+
+					</div>
+
+					<!--常用配置	start-->
+					<div class="bs-docs-section">
+						<h1 id="setting" class="page-header">初识</h1>
+
+						<p class="lead">
+							简洁、易操作的编辑界面，感受编码的便捷。
+						</p>
+
+						<!--启动-->
+						<h2 id="setting-start">启动</h2>
+						<p>
+							执行Atom文件夹下的<code>
+								atom.exe</code>
+							启动
+						</p>
+
+						<!--菜单栏-->
+						<h2 id="setting-menu">菜单栏</h2>
+
+						<ul>
+							<li>
+								<strong>文件</strong> — 文件的保存打开，项目的保存打开，最后一次的项目加载，关闭及设置中心，以及用户自定义的配置(配置文件，初始化脚本，样式风格，代码片段，快捷键配置文件)等
+							</li>
+							<li>
+								<strong>编辑</strong> — 文件编辑的操作，文件编码格式，及行跳转等
+							</li>
+							<li>
+								<strong>查看</strong> — 全屏，字体大小的缩放等
+							</li>
+							<li>
+								<strong>选择</strong> — 选择行，选择单词等选择操作
+							</li>
+							<li>
+								<strong>查找</strong> — 都是关于查询的 ，跟Sublime text相似，快捷键基本一样
+							</li>
+							<li>
+								<strong>扩展</strong> — 包，就是插件列表
+							</li>
+							<li>
+								<strong>帮助</strong> — 帮助文档，软件更新，协议等
+							</li>
+							<li>
+								<strong>VX</strong> — VX扩展插件，包括重启atom，拖拽生成页面，服务启动
+							</li>
+							<li>
+								<strong>VX-Tools</strong> — VX扩展的工具插件，包括欢迎页，API帮助文档等
+							</li>
+						</ul>
+
+						<!--设置-->
+						<h2 id="setting-settings">设置中心</h2>
+						<p>
+							<code>
+								File->Settings</code>
+							进入设置中心（默认快捷键<code>
+								ctrl+,</code>
+							） <img class="img-responsive center-block" src="img/setting.png" />
+						</p>
+
+						<p>
+							左侧有以下几个设置分类：
+							<ul>
+								<li>
+									<strong>核心设置</strong> — 全局设置，可以设置文件的编码，菜单栏是否显示，忽略文件，文档缩进，字体大小，项目主目录等，这个比sublime text人性化，简洁明了的配置
+								</li>
+								<li>
+									<strong>编辑器设置</strong> — 编辑设置
+								</li>
+								<li>
+									<strong>系统设置</strong> — 系统右键菜单设置，可配置右键菜单“Open with Atom”
+								</li>
+								<li>
+									<strong>快捷键绑定</strong> — 快捷键配置，默认快捷键都汇总于此了，很方便查询对应的快捷键的功能，也方便修改…人性化
+								</li>
+								<li>
+									<strong>扩展</strong> — 插件管理中心，可以设置插件，删除插件及禁用，无安装功能
+								</li>
+								<li>
+									<strong>主题</strong> — 主题管理中心，可以设置主题(支持鼠标选定，也支持写入配置文件生效)，管理主题(删除及在线下载主题)
+								</li>
+								<li>
+									<strong>更新</strong> — 查询社区包的状态，随时随地的更新已安装的插件
+								</li>
+								<li>
+									<strong>安装</strong> — 目前分为两栏，自上而下，第一部分是搜索(可以搜索社区的插件)，下面一部分会展示目前比较流行的插件(可以直接点击下载使用)
+								</li>
+								<li>
+									<strong>打开插件源码目录</strong> — 配置文件集合目录 ，打开<code>
+										.atom</code>
+									文件夹
+								</li>
+							</ul>
+						</p>
+
+						<!--常用设置-->
+						<h2 id="setting-userset">常用设置</h2>
+						<p>
+							使用前需要配置一些常用设置项：
+							<div class="table-responsive">
+								<table class="table table-bordered table-hover table-striped">
+									<thead>
+										<tr class="active">
+											<th>设置分类</th>
+											<th>设置项</th>
+											<th>设置内容</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">核心设置</th>
+											<td>文件编码</td>
+											<td>utf-8</td>
+										</tr>
+										<tr>
+											<th scope="row" rowspan="8" style="vertical-align: middle;">编辑器设置</th>
+											<td>自动缩进</td>
+											<td>选中</td>
+										</tr>
+										<tr>
+											<td>字体</td>
+											<td>Windows默认使用Consolas字体，可以自定义，写上字体名称即可</td>
+										</tr>
+										<tr>
+											<td>字体大小</td>
+											<td>设置字体大小</td>
+										</tr>
+										<tr>
+											<td>行高</td>
+											<td>设置行高，默认1.5</td>
+										</tr>
+										<tr>
+											<td>显示缩进指示线</td>
+											<td>选中</td>
+										</tr>
+										<tr>
+											<td>显示行号</td>
+											<td>选中</td>
+										</tr>
+										<tr>
+											<td>自动换行</td>
+											<td>选中（md文件中不起效）</td>
+										</tr>
+										<tr>
+											<td>Tab的长度</td>
+											<td>4</td>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+
+						</p>
+
+						<!--常用操作-->
+						<h2 id="setting-keybind">常用操作</h2>
+
+						<p>
+							atom中默认的快捷键，需要注意与其他软件的热键冲突（比如某企鹅），当然这些快捷键可以在<code>
+								.atom/keymap.cson</code>
+							文件中自定义：
+						</p>
+
+						<!--常用快捷键表格-->
+						<div class="table-responsive">
+							<table class="table table-bordered table-condensed table-hover table-striped">
+								<thead>
+									<tr class="active">
+										<th class="text-center">英文</th>
+										<th class="text-center">中文</th>
+										<th class="text-center">快捷键</th>
+										<th class="text-center">功能</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td align="center">New Window</td>
+										<td align="center">新建界面窗口</td>
+										<td align="left">Ctrl + Shift + N</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">New File</td>
+										<td align="center">新建文件</td>
+										<td align="left">Ctrl + N</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Open File</td>
+										<td align="center">打开文件</td>
+										<td align="left">Ctrl + O</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Open Folder</td>
+										<td align="center">打开文件夹</td>
+										<td align="left">Ctrl + Shift + O</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Add Project Folder</td>
+										<td align="center">加载项目目录</td>
+										<td align="left">Ctrl + Alt + O</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Reopen Last Item</td>
+										<td align="center">重新加载上次项目</td>
+										<td align="left">Ctrl + Shift + T</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Save</td>
+										<td align="center">保存文件</td>
+										<td align="left">Ctrl + S</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Save As</td>
+										<td align="center">另存为</td>
+										<td align="left">Ctrl + Shift +S</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Close Tab</td>
+										<td align="center">关闭当前编辑文档</td>
+										<td align="left">Ctrl + W</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Close Window</td>
+										<td align="center">关闭编辑器</td>
+										<td align="left">Ctrl + Shift + W</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Undo</td>
+										<td align="center">撤销</td>
+										<td align="left">Ctrl + Z</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Redo</td>
+										<td align="center">重做</td>
+										<td align="left">Ctrl + Y</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Cut</td>
+										<td align="center">剪切</td>
+										<td align="left">Ctrl + X</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Copy</td>
+										<td align="center">复制</td>
+										<td align="left">Ctrl + C</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Copy Path</td>
+										<td align="center">复制文档路径</td>
+										<td align="left">Ctrl + Shift + C</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Paste</td>
+										<td align="center">粘贴</td>
+										<td align="left">Ctrl + V</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Select All</td>
+										<td align="center">全选</td>
+										<td align="left">Ctrl + A</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Select Encoding</td>
+										<td align="center">选择编码</td>
+										<td align="left">Ctrl + Shift +U</td>
+										<td align="center">就是设置文件的编码</td>
+									</tr>
+									<tr>
+										<td align="center">Go to Line</td>
+										<td align="center">跳转到某行</td>
+										<td align="left">Ctrl + G</td>
+										<td align="center">支持行列搜索,Row:Column</td>
+									</tr>
+									<tr>
+										<td align="center">Slect Grammar</td>
+										<td align="center">语法选择</td>
+										<td align="left">Ctrl + Shift + L</td>
+										<td align="center">和Sublime的Syntax设置功能一样</td>
+									</tr>
+									<tr>
+										<td align="center">Reload</td>
+										<td align="center">重载</td>
+										<td align="left">Ctrl+ Alt +R</td>
+										<td align="center">重新载入当前编辑的文档</td>
+									</tr>
+									<tr>
+										<td align="center">Toggle Full Screen</td>
+										<td align="center">全屏</td>
+										<td align="left">F11</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Increase Font Size</td>
+										<td align="center">增大字体</td>
+										<td align="left">Ctrl + Shift + “+”</td>
+										<td align="center">Sublime的Ctrl + 也能生效</td>
+									</tr>
+									<tr>
+										<td align="center">Decrease Font Size</td>
+										<td align="center">减小字体</td>
+										<td align="left">Ctrl + Shift + “-”</td>
+										<td align="center">Sublime的Ctrl - 也能生效</td>
+									</tr>
+									<tr>
+										<td align="center">Toggle Tree View</td>
+										<td align="center">展示隐藏目录树</td>
+										<td align="left">Ctrl + |</td>
+										<td align="center">Sublime的Ctrl+K,+B这里也可以生效</td>
+									</tr>
+									<tr>
+										<td align="center">Toggle Commadn palette</td>
+										<td align="center">全局搜索面板</td>
+										<td align="left">Ctrl + Shift + P</td>
+										<td align="center">和Sublime的大同小异</td>
+									</tr>
+									<tr>
+										<td align="center">Select Line</td>
+										<td align="center">选定一行</td>
+										<td align="left">Ctrl + L</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Select First Character of Line</td>
+										<td align="center">选定光标至行首</td>
+										<td align="left">Shift + Home</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Slect End of Line</td>
+										<td align="center">选定光标至行尾</td>
+										<td align="left">Shift + End</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Select to Top</td>
+										<td align="center">选定光标处至文档首行</td>
+										<td align="left">Ctrl + Shift + Home</td>
+										<td align="center">就是光标处作为分割线,取文档上部分</td>
+									</tr>
+									<tr>
+										<td align="center">Select to Bottom</td>
+										<td align="center">选定光标处至文档尾行</td>
+										<td align="left">Ctrl + Shfit + End</td>
+										<td align="center">就是光标处作为分割线,取文档下部分</td>
+									</tr>
+									<tr>
+										<td align="center">Find in Buffer</td>
+										<td align="center">从缓存器搜索</td>
+										<td align="left">Ctrl + F</td>
+										<td align="center">与Sublime一致</td>
+									</tr>
+									<tr>
+										<td align="center">Replace in Buffer</td>
+										<td align="center">高级替换</td>
+										<td align="left">Ctrl + Shift + F</td>
+										<td align="center">与Sublime一致</td>
+									</tr>
+									<tr>
+										<td align="center">Select Next</td>
+										<td align="center">匹配选定下一个</td>
+										<td align="left">Ctrl + D</td>
+										<td align="center">和Sublime一模一样有木有</td>
+									</tr>
+									<tr>
+										<td align="center">Select All</td>
+										<td align="center">匹配选定所有</td>
+										<td align="left">Alt + F3</td>
+										<td align="center">和Sublime一模一样有木有</td>
+									</tr>
+									<tr>
+										<td align="center">Find File</td>
+										<td align="center">查询文件,选定打开</td>
+										<td align="left">Ctrl + P</td>
+										<td align="center">与Sublime不一样</td>
+									</tr>
+									<tr>
+										<td align="center">Delte End of Word</td>
+										<td align="center">删除光标处至词尾</td>
+										<td align="left">Ctrl + Del</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Duplicate Line</td>
+										<td align="center">复制当前行追加到后面</td>
+										<td align="left">Ctrl + Shift + D</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Delete Line</td>
+										<td align="center">删除一行</td>
+										<td align="left">Ctrl + Shift + K</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Toggle Comment</td>
+										<td align="center">启用注释</td>
+										<td align="left">Ctrl + /</td>
+										<td align="center">与Sublime一致</td>
+									</tr>
+									<tr>
+										<td align="center">Toggle developer tools</td>
+										<td align="center">打开Chrome调试器</td>
+										<td align="left">Ctrl + Shift + I</td>
+										<td align="center">神奇啊</td>
+									</tr>
+									<tr>
+										<td align="center">Indent</td>
+										<td align="center">增加缩进</td>
+										<td align="left">Ctrl + [</td>
+										<td align="center">向右缩进</td>
+									</tr>
+									<tr>
+										<td align="center">Outdent</td>
+										<td align="center">减少缩进</td>
+										<td align="left">Ctrl + ]</td>
+										<td align="center">向左缩进</td>
+									</tr>
+									<tr>
+										<td align="center">Move Line Up</td>
+										<td align="center">行向上移动</td>
+										<td align="left">Ctrl + up</td>
+										<td align="center">如字面意思</td>
+									</tr>
+									<tr>
+										<td align="center">Move Line Down</td>
+										<td align="center">行向下移动</td>
+										<td align="left">Ctrl + Down</td>
+										<td align="center">如字面意思</td>
+									</tr>
+									<tr>
+										<td align="center">Join Lines</td>
+										<td align="center">行链接</td>
+										<td align="left">Ctrl + J</td>
+										<td align="center">追加</td>
+									</tr>
+									<tr>
+										<td align="center">newline-below</td>
+										<td align="center">光标之下增加一行</td>
+										<td align="left">Ctrl + Enter</td>
+										<td align="center">与sublime 一致</td>
+									</tr>
+									<tr>
+										<td align="center">editor:newline-above</td>
+										<td align="center">光标之上增加一行</td>
+										<td align="left">Ctrl + Shift + Enter</td>
+										<td align="center">与sublime 一致</td>
+									</tr>
+									<tr>
+										<td align="center">pane:show-next-item</td>
+										<td align="center">切换编辑的标签页</td>
+										<td align="left">Ctrl + Tab</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Fuzzy Finder</td>
+										<td align="center">文件跳转面板</td>
+										<td align="left">Ctrl + T</td>
+										<td align="center">如字面意思</td>
+									</tr>
+									<tr>
+										<td align="center">Select Line Move above</td>
+										<td align="center">选中行上移</td>
+										<td align="left">Ctrl + up</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Select Line Move below</td>
+										<td align="center">选中行下移</td>
+										<td align="left">Ctrl + down</td>
+										<td align="center">如中文意思</td>
+									</tr>
+									<tr>
+										<td align="center">Symbol-view</td>
+										<td align="center">进入变量、函数跳转面板。</td>
+										<td align="left">Ctrl + R</td>
+										<td align="center">如中文意思</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<!--插件安装-->
+						<h2 id="setting-addplugin">插件安装</h2>
+						<p>
+							Atom作为一开源的编辑器提供了大量实用、神奇的插件，并且时刻涌入着新鲜的插件，这里有两种载入插件的方法：
+							<br />
+							<h4>方法一</h4>
+							下载安装，
+							<code>File→settings→Install→输入插件名</code>
+							进入设置中心并查询插件，点击安装：
+							<img class="img-responsive center-block" src="img/plugin.gif" type="image/gif" style="height: auto;" />
+							<br />
+							<h4>方法二</h4>
+							当然也可以通过下载插件代码，或者 <a href="#extend-plugin">自己编写插件</a>后进行本地安装，本地安装atom插件需要配置apm环境：
+							<br />
+							<code>（如果您更青睐 npm 命令，可跳过安装apm工具，在随后的第二步中执行 npm install 命令）</code>
+						</p>
+						<div class="bs-callout bs-callout-info">
+							<h4>安装<code>
+								apm</code>（Atom 包管理器的命令行工具）</h4>
+							<p>
+								找到安装的Atom安装包，路径 <code>*\Atom\resources\app\apm</code>下找到<code>apm.cmd</code>文件，将该路径配置到环境变量的path中;
+								<br />
+								配置完成后在命令行执行<code>apm -version</code>如果出现以下情形则表示apm安装成功：
+							</p>
+							<img class="img-responsive center-block" src="img/apmcmd.png" />
+						</div>
+						<p id="apminstall">
+							本地安装插件：<br />
+							第一步需要将插件代码文件夹放到<code>.atom/package</code>中；
+							<br />
+							第二步<code>进入插件的文件夹</code>，执行<code>apm install</code>
+							命令行 <img class="img-responsive center-block" src="img/apminstall.gif" />
+						</p>
+
+						<div class="bs-callout bs-callout-warning">
+							<h4>插件安装完成之后需要重启atom</h4>
+							<p>
+								基本上插件都有二度设置，都有readme可查看详细信息，也可以进入源码定制，鼠标点击实现高度自定义，很人性化......
+							</p>
+						</div>
+
+						<!--常用插件-->
+						<h2 id="setting-plugin">常用插件</h2>
+						<p>
+							常用插件推荐，默认快捷键都可以在<code>
+								keymap.cson</code>
+							中更改
+						</p>
+
+						<!--常用插件列表-->
+						<div class="table-responsive">
+							<table class="table table-bordered table-hover table-striped">
+								<thead>
+									<tr class="active">
+										<td>
+										<div>
+											<b>插件名</b>
+										</div></td>
+										<td>
+										<div>
+											<b>用法</b>
+										</div></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+										<div>
+											autocomplete-plus
+										</div></td>
+										<td>
+										<div>
+											输入的时候提供候选项（好像自带）
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<div>
+											javascript-snippets
+										</div></td>
+										<td>
+										<div>
+											js代码补全，用法可看readme，（强大的自定义！）
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<div>
+											color-picker
+										</div></td>
+										<td>
+										<div>
+											取色器，快捷键ctrl+alt+c
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<div>
+											script
+										</div></td>
+										<td>
+										<div>
+											根据文件名称、或所选代码快、或行号执行代码，支持大多数编程语言，ctrl+shift+p执行script相关语句
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<div>
+											emmet
+										</div></td>
+										<td>
+										<div>
+											快速完成代码，参照emmet官方文档，tab
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<div>
+											autocomplete-paths
+										</div></td>
+										<td>
+										<div>
+											自动匹配引入文件路径工具
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<div>
+											atom-html-preview
+										</div></td>
+										<td>
+										<div>
+											html文档预览工具，快捷键ctrl+shift+H
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<div>
+											atom-beautify
+										</div></td>
+										<td>
+										<div>
+											一键美化代码格式，快捷键ctrl+alt+B
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<div>
+											browser-plus
+										</div></td>
+										<td>
+										<div>
+											内部打开浏览器，快捷键ctrl+alt+o
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<div>
+											sync-settings
+										</div></td>
+										<td>
+										<div>
+											插件备份，按键绑定备份（需配置github，见配置同步）
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<div>
+											pigments
+										</div></td>
+										<td>
+										<div>
+											颜色显示插件
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<div>
+											angularjs
+										</div></td>
+										<td>
+										<div>
+											关于angularjs的插件，里面包含了ng-代码补全（可以根据这个改vx snippets）
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<div>
+											plateformio-ide-terminal
+										</div></td>
+										<td>
+										<div>
+											命令行终端
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<div>
+											highlight-selected
+										</div></td>
+										<td>
+										<div>
+											高亮所有和当前选中单词一样的单词
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<div>
+											regex-railroad-diagram
+										</div></td>
+										<td>
+										<div>
+											正则表达式图形化
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<div>
+											tortoise-svn
+										</div></td>
+										<td>
+										<div>
+											svn工具（需在事先下载好的svn工作空间中执行操作）
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<div>
+											tool-bar + tool-bar-almighty
+										</div></td>
+										<td>
+										<div>
+											工具栏
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<div>
+											minimap
+										</div></td>
+										<td>
+										<div>
+											源码缩略预览图
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<div>
+											custom-title
+										</div></td>
+										<td>
+										<div>
+											给atom设置个性化标题
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<div>
+											css-snippets
+										</div></td>
+										<td>
+										<div>
+											css代码提示
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<div>
+											simplified-chinese-menu
+										</div></td>
+										<td>
+										<div>
+											Atom的简体中文语言包，完整汉化
+										</div></td>
+									</tr>
+									<!--<tr>
+									<td>
+									<div><br></div>
+									</td>
+									<td>
+									<div><br></div>
+									</td>
+									</tr>-->
+								</tbody>
+							</table>
+						</div>
+
+						<!--========-->
+					</div>
+
+					<!--扩展	start-->
+					<div class="bs-docs-section">
+						<h1 id="extend" class="page-header">扩展</h1>
+
+						<p class="lead">
+							高度自定义，配置你自己的编辑器。
+						</p>
+
+						<!--snippet-->
+						<h2 id="extend-snippet">Snippet - 自定义代码片段</h2>
+						<p>
+							snippet 即代码提示，通过输入关键字生成相应的代码片段，也可以通过快捷方式快速生成常用代码。
+							<br />
+							许多 Core 包和 Community 包都捆绑了它们自带的代码段，这些代码段只能用于它们自身。例如，language-html 包就为 HTML 语法高亮和语法提供了支持，并且带有很多代码段；类似的还有：language-java、language-javascript、language-php等语言包。
+						</p>
+
+						<img class="img-responsive center-block" src="img/snippet.gif" type="image/gif" style="height: auto;" />
+
+						<div class="bs-callout bs-callout-info">
+							<h4>自定义代码片段方法：</h4>
+							<p>
+								<ol>
+									<li>
+										通过 <code>
+											File > Snippets</code>
+										菜单，打开<code>
+											snippets.cson</code>
+										文件。修改之后，只要保存了文件，Atom 就会重新加载这个文件，就可以立即使用了。
+									</li>
+									<li>
+										自定义代码段的基本格式（有趣的是，你可以通过输入<code>
+											snip</code>
+										快速生成代码段模板）
+									</li>
+								</ol>
+							</p>
+
+						</div>
+
+						<!--<figure class="highlight">-->
+						<pre>
+#snippets.cson文件
+#单snip选择器写法
+'.source.js':
+     'console.log':
+          'prefix': 'log'
+          'body': 'console.log(${1:"crash"});$2'
+
+#多snip写法：（相同作用域的snip要放在同一选择器下，选择器只能写一个，不然会覆盖）
+#html
+'.text.html.basic':
+  # A
+  'Anchor':
+    'prefix': 'a'
+    'body': '&lt;a href="${1:#}"&gt;$2&lt;/a&gt;$0'
+
+  #可以使用 CoffeeScript多行语法的 """ 来创建长模板。
+  'Abbreviation':
+    'prefix': 'abbr'
+    'body': """
+    	&lt;div&gt;
+    		&lt;abbr title="$1"&gt;$2&lt;/abbr&gt;$0
+    	&lt;/div&gt;
+    """</pre>
+						<!--</figure>-->
+
+						<p>
+							语法解释（以上述<code>
+								console.log</code>
+							为例）：
+							<ol>
+								<li>
+									<code>
+										'.source.js':</code>
+									最外边的键是<strong>选择器</strong>，表明这些代码段在哪些文件中才能生效。要想知道这个键的值，最简单的方法就是：进入代码段语言所对应的语言包中，查看 <code>
+										Scope</code>
+									字符串，如下图的js语言包的scope就是<code>
+										source.js</code>
+									。（注意：键值就是 <code>
+										. + Scope</code>
+									，并且同一个snippets.cson文件中的选择器不能重复，不然会覆盖） <img class="img-responsive center-block" src="img/snippet1.png" type="img/png" style="width: auto;" />
+								</li>
+								<li>
+									<code>
+										'console.log':
+									</code>
+									这一层的键是<strong>代码段名称</strong>，用于在代码段提示菜单中添加的描述。你可以自由命名。
+								</li>
+								<li>
+									代码段名称之后，便是可以出发代码段的 <code>
+										prefix</code>
+									和 当代码段被触发时将要插入的代码
+									<code>
+										body
+									</code>
+								</li>
+								<li>
+									在<code>
+										'body'</code>
+									中，每一个带有数字的 $ 就是一个 tab 键驻留位置。只要代码段被触发，便可以通过 Tab 键遍历这些 tab 驻留位置
+								</li>
+								<ul>
+									<li>
+										具有相同数字的 tab 驻留位置 将会创建多个光标
+									</li>
+									<li>
+										上面例子中的 crash 字符串会在开始时被选中
+									</li>
+								</ul>
+							</ol>
+						</p>
+
+						<!--优化-->
+						<div class="bs-callout bs-callout-info">
+							<h4>优化</h4>
+							<p>
+								将所有的代码片段都集中在一个文件中不是一个好方法，可以通过添加文件夹将片段以文件形式模块化：
+								<br />
+								插件中添加<code>
+									snippets</code>
+								文件夹，文件夹名强制，文件名自定义，按照上述格式在文件中直接新建、配置，重启后生效
+							</p>
+						</div>
+						<img class="img-responsive center-block" src="img/bettersnippets.png" />
+
+						<!--atomvx-->
+						<h2 id="extend-atomvx">atom-vx</h2>
+						<p>
+							vx定制了一套适用于vx开发的插件——<code>
+								atom-vx</code>
+							，里面提供了一些适用与vx开发的功能，并在逐步完善中。
+						</p>
+
+						<div class="table-responsive">
+							<table class="table table-hover table-striped table-bordered text-center ">
+								<thead>
+									<tr class="active">
+										<td>功能名</td>
+										<td>功能描述</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>window reload</td>
+										<td>重启编辑器</td>
+									</tr>
+									<tr>
+										<td>VX web layout</td>
+										<td>可视化布局</td>
+									</tr>
+									<tr>
+										<td>VX http server
+										<br />
+										(start on port 3000~9000)</td>
+										<td style="vertical-align: middle;">默认浏览器启动在对应端口启动服务</td>
+									</tr>
+									<tr>
+										<td>VX http server
+										<br />
+										(stop all server)</td>
+										<td style="vertical-align: middle;">关闭所有服务</td>
+									</tr>
+									<tr>
+										<td>欢迎页</td>
+										<td>VE平台欢迎页面及简单使用介绍</td>
+									</tr>
+									<tr>
+										<td>VX-API</td>
+										<td>vx接口说明文档</td>
+									</tr>
+									<tr>
+										<td>VX-Design</td>
+										<td>定制化VX设计</td>
+									</tr>
+									<tr>
+										<td>New HTML5 page</td>
+										<td>新建VX模板文件——H5的html文件</td>
+									</tr>
+									<tr>
+										<td>New Controller</td>
+										<td>新建VX模板文件——控制器模板</td>
+									</tr>
+									<tr>
+										<td>New Directive</td>
+										<td>新建VX模板文件——指令模板</td>
+									</tr>
+									<tr>
+										<td>Open Terminal</td>
+										<td>调用系统的命令框</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<!--插件开发-->
+						<h2 id="extend-plugin">插件开发</h2>
+						<p>
+							通过编写插件可以实现定制化功能。
+						</p>
+						<div class="bs-callout bs-callout-info">
+							<h4>创建插件骨架</h4>
+							<p>
+								<ul>
+									<li>
+										启动编辑器，按下 Cmd+Shift+P（MacOS）或者 Ctrl+Shift+P（Windows/Linux）来打开命令面板Command Palette。
+									</li>
+									<li>
+										搜索“Package Generator: Generate Package”并点击列表中正确的条目，你会看到一个输入提示，输入软件包的路径及名称，例如：“atom-vx”。
+									</li>
+									<li>
+										按下回车键来生成这个骨架代码包，它会自动在 Atom 中打开。
+									</li>
+								</ul>
+							</p>
+						</div>
+						<p>
+							以atom-vx插件为例，完成的插件包含如下文件夹：
+						</p>
+						<img class="img-responsive center-block" src="img/plugincatalog.png" />
+						<p>
+							<ul>
+								<li>
+									<strong>keymaps</strong> - 快捷键文件
+								</li>
+								<li>
+									<strong>lib</strong> - 主文件
+								</li>
+								<li>
+									<strong>menus</strong> - 菜单目录配置文件
+								</li>
+								<li>
+									<strong>node_modules</strong> - NodeJS模块
+								</li>
+								<li>
+									<strong>snippets</strong> - 代码片段设置文件
+								</li>
+								<li>
+									<strong>package.json</strong> - Atom 软件包的入口文件。Atom 通过 package.json 里的条目设置来找到主文件的位置
+								</li>
+								<li>
+									<strong>README.md</strong> - 说明文档
+								</li>
+							</ul>
+						</p>
+						<p>
+							<a href="#apminstall">完成开发后需要将插件文件夹移动到.atom的packages文件夹中，并进入插件进行apm配置。</a>
+						</p>
+
+					</div>
+				</div>
+				<!--主体左侧内容	end-->
+
+				<!--右侧导航--start-->
+				<div class="col-md-3" role="complementary">
+					<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+						<ul class="nav bs-docs-sidenav">
+
+							<!--概览-->
+							<li>
+								<a href="#overview">邂逅</a>
+								<ul class="nav">
+									<li class="">
+										<a href="#overview-reason">为何使用Atom</a>
+									</li>
+									<li class="">
+										<a href="#overview-download">下载安装</a>
+									</li>
+								</ul>
+							</li>
+
+							<!--初识-->
+							<li>
+								<a href="#setting">初识</a>
+								<ul class="nav">
+									<li class="">
+										<a href="#setting-start">启动</a>
+									</li>
+									<li class="">
+										<a href="#setting-menu">菜单栏</a>
+									</li>
+									<li class="">
+										<a href="#setting-settings">设置中心</a>
+									</li>
+									<li class="">
+										<a href="#setting-userset">常用设置</a>
+									</li>
+									<li class="">
+										<a href="#setting-keybind">常用操作</a>
+									</li>
+									<li class="">
+										<a href="#setting-addplugin">插件安装</a>
+									</li>
+									<li class="">
+										<a href="#setting-plugin">常用插件</a>
+									</li>
+								</ul>
+							</li>
+
+							<!--扩展-->
+							<li>
+								<a href="#extend">扩展</a>
+								<ul class="nav">
+									<li class="">
+										<a href="#extend-snippet">Snippet - 自定义代码片段</a>
+									</li>
+									<li class="">
+										<a href="#extend-atomvx">atom-vx - VX插件</a>
+									</li>
+									<li class="">
+										<a href="#extend-plugin">插件开发</a>
+									</li>
+								</ul>
+							</li>
+
+						</ul>
+
+						<!--返回顶部-->
+						<a class="back-to-top" href="#top"> 返回顶部 </a>
+
+					</nav>
+				</div>
+				<!--右侧导航--end-->
+
+			</div>
+		</div>
+
+		<!-- Footer================================================== -->
+		<footer class="bs-docs-footer">
+			<div class="container">
+				<ul class="bs-docs-footer-links">
+					<li>
+						<a onclick="openWindow('http://115.182.90.204:8082/vx-api/index.html#/welcome')" href="javascript:void(0)">VX-API</a>
+					</li>
+					<li>
+						<a onclick="openWindow('http://115.182.90.204:8082/vxDesign/index.html#/app/ClassicalDesk')" href="javascript:void(0)">VX-Design</a>
+					</li>
+				</ul>
+
+				<p>
+					Designed by CSII-VX team.
+				</p>
+
+				<p>
+					Copyright &copy; 2016
+					<a onclick="openWindow('http://www.csii.com.cn')" href="javascript:void(0)">CSII; Licensed</a>.
+				</p>
+			</div>
+		</footer>
+
+		<!-- Bootstrap core JavaScript================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="./resource/jquery.min.js"></script>
+		<script>
+			window.jQuery || document.write('<script src="./resource/jquery.min.js"><\/script>')
+		</script>
+
+		<script src="./resource/bootstrap.min.js"></script>
+
+		<script src="./resource/docs.min.js"></script>
+
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="./resource/ie10-viewport-bug-workaround.js"></script>
+
+		<!-- Analytics================================================== -->
+		<script type="text/javascript">
+			var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+			document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fbdb993b828cbe079a7fbc1a951f44726' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script src="./resource/h.js" type="text/javascript"></script>
+
+		<!-- 全局统计代码 -->
+		<script type="text/javascript">
+			var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F079fac161efc4b2a6f31e80064f14e82' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script src="./resource/h(1).js" type="text/javascript"></script>
+
+		<div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" style="position: absolute; left: 901px; top: 21364px; width: 46px; height: 29px; z-index: 999999999;display:none;" title="" data-original-title="Copy to clipboard">
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="global-zeroclipboard-flash-bridge" width="100%" height="100%">
+
+				<!--跨域复制文本-->
+				<!--<param name="movie" value="/assets/flash/ZeroClipboard.swf?noCache=1486180020694">-->
+				<param name="allowScriptAccess" value="sameDomain">
+				<param name="scale" value="exactfit">
+				<param name="loop" value="false">
+				<param name="menu" value="false">
+				<param name="quality" value="best">
+				<param name="bgcolor" value="#ffffff">
+				<param name="wmode" value="transparent">
+				<param name="flashvars" value="trustedOrigins=v3.bootcss.com%2C%2F%2Fv3.bootcss.com%2Chttp%3A%2F%2Fv3.bootcss.com">
+				<!--<embed src="/assets/flash/ZeroClipboard.swf?noCache=1486180020694" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="100%" height="100%" name="global-zeroclipboard-flash-bridge" allowscriptaccess="sameDomain" allowfullscreen="false" type="application/x-shockwave-flash" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="trustedOrigins=v3.bootcss.com%2C%2F%2Fv3.bootcss.com%2Chttp%3A%2F%2Fv3.bootcss.com" scale="exactfit">-->
+			</object>
+		</div>
+		<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;">
+			<defs>
+				<style type="text/css"></style>
+			</defs>
+			<text x="0" y="10" style="font-weight:bold;font-size:10pt;font-family:Arial, Helvetica, Open Sans, sans-serif">
+				140x140
+			</text>
+		</svg>
+		<script type="text/javascript">
+		/**打开浏览器展示内容*/
+		function openWindow(url) {
+			if (AtomService) {
+				AtomService.openBrowser(url);
+			} else {
+				window.open(url);
+			}
+		}
+		</script>
+	</body>
+
+</html>
